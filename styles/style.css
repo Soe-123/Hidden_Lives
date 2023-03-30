@@ -1,0 +1,336 @@
+
+@font-face {
+    font-family: 'NN Alena STD';
+    src:    url('../fonts/NNAlenaSTD-Medium.woff2') format('woff2'),
+            url('../fonts/NNAlenaSTD-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Absara';
+    src:    url('../fonts/Absara-Regular.woff2') format('woff2'),
+            url('../fonts/Absara-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+  
+  * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x:hidden 
+    } 
+  
+    body {
+    font-size: 100%;
+    background-color: rgb(184, 184, 184);
+    width: 100vw;
+    }
+
+    header {
+    background: rgb(217, 255, 0);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    }
+
+    .header-item{
+    background: rgb(217, 255, 0);
+    padding: 12px 24px 6px 24px;
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    header .logo {
+    width: 65px
+    }
+
+    header .logo img {
+    height: 60px;
+    }
+
+    header .wordmark img {
+    width: 215px;
+    }
+
+    main {
+    height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    }
+
+    header picture {
+    display: block;
+    width: 250px;
+    }
+
+    footer { }
+
+    h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'NN Alena STD';
+    font-weight: 500;
+    font-size: 44px;
+    font-variant-numeric:lining-nums;
+    margin: 26px 0 0 0;
+    letter-spacing: -0.2px;
+    }
+
+  h2 {
+    font-family: 'NN Alena STD';
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+    max-width: 590px;
+    font-variant-numeric:lining-nums;
+  }
+
+  h3 {
+    color:  rgba(0, 0, 0, 0.5);
+    font-family: 'NN Alena STD';
+    font-weight: 500;
+    font-size: 44px;
+    margin: 6px 0 24px 0;
+    letter-spacing: -0.2px;
+
+  }
+
+  h4 {
+    font-family: 'NN Alena STD';
+    font-size: 16px;
+    font-weight: 500;
+    font-display: swap;
+    margin-top: 0;
+    font-variant-numeric:lining-nums;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: black;
+    font-family: 'NN Alena STD';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.35;
+    font-variant-numeric:lining-nums;
+    max-width: 590px;
+  }
+
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'NN Alena STD';
+    font-weight: 500;
+    line-height: 1.35;
+    /* border-bottom: 2px solid black; */
+  }
+
+  .pdf {
+    color: black;
+  }
+
+  a:hover {
+    color:  rgb(217, 255, 0);
+  }
+
+  .mail {
+    margin-bottom: 28px;
+  }
+
+  .flex-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: calc(100vh - 83px);
+    /* background-image: url('../images/HLHG_Logo_Yellow.svg'); */
+    background-position: right 10px bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+  }
+
+  .flex-item {
+   flex-basis: 50%;
+    height: auto;
+    padding: 24px;
+
+  }
+
+  .flex-item:first-of-type {
+    max-width: 660px;
+    background: rgb(228, 228, 228);
+    min-height: 100vh;
+    height: fit-content;
+  }
+
+  .flex-item:last-of-type {
+    background-color: rgb(184, 184, 184);
+    width: 100%;
+    max-width: 100%;
+  }
+
+.circle {
+  font-family: 'NN Alena STD';
+    height: 140px;
+    width: 140px;
+    background-color: black;
+    border-radius: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    margin-top: 18px;
+}
+
+.circle:hover {
+  background-color:  rgb(217, 255, 0);
+  color: black;
+}
+
+
+
+  .spiral {
+    height: 160px;
+    width: 160px;
+    border-radius: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 11px;
+    margin-top: 0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    margin-left: -10px;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+  }
+
+
+  @media screen and (max-width: 1024px) {
+
+    h1 {
+    font-size: 36px;
+    }
+
+    h3 {
+    font-size: 36px;
+    margin-bottom: 36px;
+    }
+
+    .spiral {
+     height: 140px;
+     width: 140px;
+     margin-bottom:0px;   
+    }
+
+  }
+
+  @media screen and (max-width: 650px) {
+
+
+    .flex-container {
+    flex-direction: column;
+    }
+
+    h1 {
+    font-size: 42px;
+    margin-top: 12px;
+    }
+
+    h3 {
+    font-size: 42px;
+    margin-bottom: 24px;
+    }
+
+    h4 {
+    margin-bottom: 8px;
+    }
+
+    h2 {
+    font-size: 16px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+    }
+
+    body {
+      background-color:  rgb(217, 255, 0);
+      overflow-x: hidden;
+    }
+
+    .spiral {
+      margin-bottom:0px;
+    }
+
+    header .logo {
+    width: 45px;
+    margin-left: -3px;
+    }
+    
+    header .logo img {
+    height: 40px;
+    }
+
+    header .wordmark {
+      width: 100vw;
+      margin: -45px;
+    }
+    
+    header .wordmark img {
+    width: 220px;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    padding-right: 5vw;
+    display: block;
+    }
+
+    header picture {
+      width: auto;
+    }
+
+    .pdf {
+    display: none;
+    }
+
+    .flex-item:first-of-type {
+      max-width: 660px;
+      background: rgb(228, 228, 228);
+      min-height: auto;
+      height: fit-content;
+    }
+
+    .flex-item:last-of-type {
+      padding-bottom: 79px;
+    }
+
+    .circle {
+      margin-bottom: 0px;
+    }
+  
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'NN Alena STD';
+    src: url('NNAlenaSTD-Medium.eot');
+    src: url('NNAlenaSTD-Medium.eot?#iefix') format('embedded-opentype'),
+        url('NNAlenaSTD-Medium.woff2') format('woff2'),
+        url('NNAlenaSTD-Medium.woff') format('woff'),
+        url('NNAlenaSTD-Medium.ttf') format('truetype'),
+        url('NNAlenaSTD-Medium.svg#NNAlenaSTD-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
